@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    background: hsl(0, 29%, 89%) ;
+}
+
+.wrapper{
+    width: 710px;
+    height: 550px;
+    display: flex;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.wrapper .left img{
+    height: 550px;
+    border-radius: 12px 0 0px 12px ;
+}
+
+.wrapper .right {
+    padding: 40px;
+    background: #fff;
+    border-radius: 0 12px 12px 0;
+}
+
+h1{
+margin-top: 25px;
+font-family: 'Yeseva One', cursive;
+font-weight: 900;
+line-height: 35px ;
+width: 100%;
+}
+
+
+.right .mobile-txt{
+    display: none;
+}
+
+.right.text-desktop{
+    display: inline;
+}
+
+.right h2{
+    font-family: 'Ysabeau SC', sans-serif;
+    font-size: 16px;
+    color: hsl(0, 0%, 52%);
+    line-height: 22px;
+}
+
+.right p{
+    margin-top: 25px;
+    font-family: sans-serif;
+    line-height: 32px;
+    font-size: 18px;
+    color: hsl(0, 0%, 52%);
+}
+
+.right .price .desktop{
+    display: flex;
+    margin-top: 10px;
+}
+.right .price .now{
+margin-right: 25px;
+color: hsl(165, 94%, 25%);
+font-size: 35px;
+}
+
+
+.right .text-mobile{
+    display: none;
+}
+
+.right button{
+    width: 100%;
+    margin-top: 12%;
+    font-size: 15px;
+    padding: 10px 60px;
+    cursor: pointer;
+    background: hsl(165, 94%, 25%);
+    outline: none;
+    border: none;
+    color: hsl(0, 0%, 100%);
+    border-radius: 12px;
+    height: 55px;
+}
+.mobile-price{
+    display: none;
+}
+
+.right .price .old{
+    position: relative;
+    right: 60px;
+    font-size: 15px;
+    
+}
+
+.right button .but-class{
+    position: relative;
+    right: 15px;
+    top:2px
+}
+
+.left .mobile img{
+    display: none;
+}
+
+.right button:hover{
+    background: hsl(165, 94%, 13%);
+}
+
+@media(max-width: 480px){
+    .wrapper{
+        margin-top: 60px;
+        width: 90%;
+        display: block;
+        height: 100vh;
+        border-radius: 12px 12px 12px 12px;
+        background: hsl(0, 0%, 100%);
+        
+    }
+
+    .wrapper .right {
+        width: 100%;
+        padding: 30px;
+        background: hsl(0, 0%, 100%);
+        border-radius: 0 0px 12px 12px;
+        
+    }
+
+    .wrapper .left img{
+        display: none;
+    }
+
+    .left .mobile img{
+    width: 100%;
+    height: 20%;
+    display: inline;
+    position: relative;
+    border-radius: 12px 12px 0px 0px ;
+    }
+
+
+    .right .text-mobile{
+        display: block;
+    }
+
+
+    .right .mobile-txt{
+        margin-top: 15px;
+        display: block;
+        font-size: 30px;
+    }
+
+    .mobile-price{
+        display: flex;
+        position: relative;
+        left: 60;
+    }
+
+ 
+    .right .price .desktop{
+        display: none;
+    }
+
+    .right .desktop-h1
+    {
+        display: none;
+    }
+
+    .right .text-desktop{
+        display: none;
+    }
+
+    
+
+   
+}
+
+
