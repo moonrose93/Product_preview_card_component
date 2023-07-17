@@ -98,6 +98,7 @@ font-size: 35px;
     position: relative;
     right: 60px;
     font-size: 15px;
+    text-decoration: line-through;
     
 }
 
@@ -116,11 +117,18 @@ font-size: 35px;
 }
 
 @media(max-width: 480px){
+   
+
+    body{
+        min-height: 100vh;
+        align-items: center;
+    }
+   
     .wrapper{
         margin-top: 40px;
         width: 90%;
         display: grid;
-        height: 90vh;
+        min-height: 100vh;
         border-radius: 12px 12px 12px 12px;
         transform: translate(-50%,-50%);
         background: hsl(0, 0%, 100%);
