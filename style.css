@@ -6,7 +6,7 @@
 }
 
 body{
-    background: hsl(0, 29%, 89%) ;
+    background: hsla(36, 100%, 85%, 0.664) ;
 }
 
 .wrapper{
@@ -117,16 +117,19 @@ font-size: 35px;
 
 @media(max-width: 480px){
     .wrapper{
-        margin-top: 60px;
+        margin-top: 40px;
         width: 90%;
-        display: block;
-        height: 100vh;
+        display: grid;
+        height: 90vh;
         border-radius: 12px 12px 12px 12px;
+        transform: translate(-50%,-50%);
         background: hsl(0, 0%, 100%);
         
+        
     }
-
+ 
     .wrapper .right {
+        display: grid;
         width: 100%;
         padding: 30px;
         background: hsl(0, 0%, 100%);
